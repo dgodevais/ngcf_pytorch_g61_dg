@@ -33,7 +33,7 @@ def parse_args():
                         help='Graph Node dropout.')
     parser.add_argument('--mess_dropout', type=float, default=0.1,
                         help='Message dropout.')
-    parser.add_argument('--k', type=str, default=20,
+    parser.add_argument('--k', type=int, default=20,
                         help='k order of metric evaluation (e.g. NDCG@k)')
     parser.add_argument('--eval_N', type=int, default=1,
                         help='Evaluate every N epochs')
